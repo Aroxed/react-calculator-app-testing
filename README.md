@@ -14,7 +14,7 @@ A modern calculator application built with React, Vite, and tested with Vitest a
 ## Project Structure
 
 ```
-calculator-app/
+react-calculator-app-testing/
 ├── src/
 │   ├── components/
 │   │   ├── Calculator/
@@ -22,6 +22,10 @@ calculator-app/
 │   │   │   ├── Calculator.css
 │   │   │   └── __tests__/
 │   │   │       └── Calculator.test.jsx
+│   │   ├── Calculator.jsx
+│   │   ├── Calculator.css
+│   │   └── __tests__/
+│   │       └── Calculator.test.jsx
 │   ├── App.jsx
 │   ├── App.css
 │   ├── main.jsx
@@ -29,9 +33,9 @@ calculator-app/
 ├── cypress/
 │   ├── e2e/
 │   │   └── calculator.cy.js
-│   └── fixtures/
+│   ├── fixtures/
+│   └── support/
 ├── public/
-├── .gitignore
 ├── index.html
 ├── package.json
 ├── vite.config.js
@@ -40,15 +44,15 @@ calculator-app/
 
 ## Prerequisites
 
-- Node.js (v14 or higher)
-- npm (v6 or higher)
+- Node.js (v18 or higher recommended)
+- npm (v9 or higher recommended)
 
 ## Installation
 
 1. Clone the repository:
 ```bash
 git clone https://github.com/Aroxed/react-calculator-app-testing
-cd calculator-app
+cd react-calculator-app-testing
 ```
 
 2. Install dependencies:
@@ -65,7 +69,6 @@ npm install
 - `npm run test:coverage` - Run unit tests with coverage report
 - `npm run cypress:open` - Open Cypress test runner
 - `npm run cypress:run` - Run Cypress tests in headless mode
-- `npm run test:e2e` - Run E2E tests with dev server
 
 ## Testing
 
@@ -124,9 +127,5 @@ The build artifacts will be stored in the `dist/` directory.
 - **Testing**:
   - Unit Tests: Vitest + React Testing Library
   - E2E Tests: Cypress
-- **Styling**: CSS Modules
+- **Styling**: Plain CSS
 - **Package Manager**: npm
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.

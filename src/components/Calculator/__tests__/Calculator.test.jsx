@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react'
-import { describe, it, expect, beforeEach } from 'vitest'
+import '@testing-library/jest-dom'
 import Calculator from '../Calculator'
 
 describe('Calculator', () => {
